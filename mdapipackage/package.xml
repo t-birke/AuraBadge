@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FriendsWithBoats</fullName>
+    <types>
+        <members>BoatSearchController</members>
+        <members>GenerateData</members>
+        <members>GenerateDataTests</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>BoatSearch</members>
+        <members>BoatSearchForm</members>
+        <members>BoatSearchResults</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>BoatReview__c.Boat__c</members>
+        <members>BoatReview__c.Comment__c</members>
+        <members>BoatReview__c.Rating__c</members>
+        <members>Boat__c.BoatType__c</members>
+        <members>Boat__c.Contact__c</members>
+        <members>Boat__c.Description__c</members>
+        <members>Boat__c.Geolocation__c</members>
+        <members>Boat__c.Length__c</members>
+        <members>Boat__c.Picture__c</members>
+        <members>Boat__c.Price__c</members>
+        <members>Boat__c.Year_Built__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>BoatReview__c</members>
+        <members>BoatType__c</members>
+        <members>Boat__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Friends_with_Boats</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>BoatReview__c-BoatReview Layout</members>
+        <members>BoatType__c-Boat Type Layout</members>
+        <members>Boat__c-Boat Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>BoatType__c.All</members>
+        <members>Boat__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>AuraBadge</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>46.0</version>
+</Package>
