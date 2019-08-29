@@ -2,7 +2,7 @@
 	onSearch : function(component) {
 		// get boats
         var action = component.get("c.getBoats");
-        action.setParams({ boatTypeId : "" });
+        action.setParams({ boatTypeId : component.get("v.boatTypeId") });
 		action.setCallback(this, function(response) {
             var state = response.getState();
             if (state === "SUCCESS") {
