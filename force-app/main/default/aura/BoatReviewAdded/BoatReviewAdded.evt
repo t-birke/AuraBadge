@@ -1,0 +1,1 @@
+<aura:event type="COMPONENT" description="fired when boat review has been added" />

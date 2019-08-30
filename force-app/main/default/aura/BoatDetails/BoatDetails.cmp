@@ -4,6 +4,8 @@
     <aura:attribute name="recordError" type="String"/>
     
     <aura:handler event="c:BoatSelected" action="{!c.onBoatSelected}"/>
+    <aura:handler name="BoatReviewAdded" event="c:BoatReviewAdded" action="{!c.onBoatReviewAdded}"/>
+    
     <aura:handler name="init" value="{!this}" action="{!c.init}" />
     <aura:handler name="change" value="{!v.id}" 
               action="{!c.update}"/>
@@ -16,15 +18,15 @@
       />
     <lightning:card>
     <aura:if isTrue="{!v.boat != undefined}">
-	<lightning:tabset>
+	<lightning:tabset aura:id="tabset">
         <lightning:tab label="Details">
             <c:BoatDetail boat="{!v.boat}"/>
         </lightning:tab>
-        <lightning:tab label="Reviews">
+        <lightning:tab label="Reviews" id="boatreviewtab" >
             Two Content !
         </lightning:tab>
         <lightning:tab label="Add Review">
-            Three Content !
+            <c:AddBoatReview boat="{!v.boat}" />
         </lightning:tab>
     </lightning:tabset>
     </aura:if>
