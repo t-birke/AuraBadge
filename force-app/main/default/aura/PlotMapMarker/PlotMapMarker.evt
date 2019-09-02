@@ -1,0 +1,6 @@
+<aura:event type="APPLICATION" description="Show on the map">
+    <aura:attribute name="sObjectId" type="String" />
+    <aura:attribute name="lat" type="Long" />
+    <aura:attribute name="long" type="Long" />
+    <aura:attribute name="label" type="String" />
+</aura:event>

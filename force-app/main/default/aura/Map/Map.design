@@ -1,0 +1,4 @@
+<design:component label="Map">
+    <design:attribute name="width" label="width" description="width of the map in pixels or percent" default="100%" />
+    <design:attribute name="height" label="height" description="height of the map in pixels or percent" default="200px" />
+</design:component>
