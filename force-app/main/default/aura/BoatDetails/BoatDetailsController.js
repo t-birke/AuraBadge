@@ -10,7 +10,7 @@
           }		
 	},
     onRecordUpdated : function(component, event, helper) {
-        component.find("review").refresh();
+        //component.find("review").refresh();
     },
     update : function(component, event, helper){
         component.find('service').reloadRecord();

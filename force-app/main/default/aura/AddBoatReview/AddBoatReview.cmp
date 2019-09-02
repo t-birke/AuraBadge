@@ -6,7 +6,7 @@
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <aura:registerEvent name="BoatReviewAdded" type="c:BoatReviewAdded" />
     <force:recordData aura:id="service"
-                      fields="Id,Name,Comment__c,Boat__c"
+                      fields="Id,Name,Comment__c,Boat__c,Rating__c"
                       targetRecord="{!v.newBoatReview}"
                       targetFields="{!v.boatReview}"
                       targetError="{!v.recordError}"
@@ -16,6 +16,7 @@
     <div class="slds-form--stacked">
         <lightning:input value="{!v.boatReview.Name}" labelVisible="true" label="Title" name="title" />
         <lightning:inputRichText value="{!v.boatReview.Comment__c}" label="Description" labelVisible="true" disabledCategories="FORMAT_FONT" />
+        <c:FiveStarRating readonly="false" value="{!v.boatReview.Rating__c}" />
         <lightning:button label="Submit" onclick="{!c.onSave}" iconName="utility:save" iconPosition="left"/>
     </div>
     

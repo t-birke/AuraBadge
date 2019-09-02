@@ -36,7 +36,7 @@
                             </p>
                         </div>
                     <footer class="slds-post__footer">
-                    star rating
+                    	<c:FiveStarRating readonly="true" value="{!boatReview.Rating__c}" />
                     </footer>
                     </article>
                 </li>
