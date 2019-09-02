@@ -23,7 +23,7 @@
             <c:BoatDetail boat="{!v.boat}"/>
         </lightning:tab>
         <lightning:tab label="Reviews" id="boatreviewtab" >
-            Two Content !
+            <c:BoatReviews boat="{!v.boat}" aura:id="review" />
         </lightning:tab>
         <lightning:tab label="Add Review">
             <c:AddBoatReview boat="{!v.boat}" />
